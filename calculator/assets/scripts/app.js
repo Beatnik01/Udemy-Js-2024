@@ -1,8 +1,14 @@
 let currentResult = 0;
 
+function getUserNumberInput() {
+  return parseInt(userInput.value);
+}
+
 function add() {
-  currentResult = currentResult + parseInt(userInput.value);
-  outputResult(currentResult, `${currentResult} + ${userInput.value}`);
+  const enteredNumber = getUserNumberInput();
+  const description = `${currentResult} + ${enteredNumber}`;
+  currentResult = currentResult + enteredNumber;
+  outputResult(currentResult, description);
 }
 
 addBtn.addEventListener("click", add);
