@@ -17,7 +17,13 @@ function add() {
   initialResult = currentResult;
   currentResult = currentResult + enteredNumber;
   createAndWriteOutput("+", initialResult, enteredNumber);
-  logEntries.push(enteredNumber);
+  const logEntry = {
+    operation: "ADD",
+    prevResult: initialResult,
+    operand: enteredNumber,
+    result: currentResult,
+  };
+  logEntries.push(logEntry);
   console.log(logEntries);
 }
 
@@ -26,7 +32,13 @@ function subtract() {
   initialResult = currentResult;
   currentResult = currentResult + enteredNumber;
   createAndWriteOutput("-", initialResult, enteredNumber);
-  logEntries.push(enteredNumber);
+  const logEntry = {
+    operation: "ADD",
+    prevResult: initialResult,
+    operand: enteredNumber,
+    result: currentResult,
+  };
+  logEntries.push(logEntry);
   console.log(logEntries);
 }
 
@@ -35,7 +47,13 @@ function multiply() {
   initialResult = currentResult;
   currentResult = currentResult + enteredNumber;
   createAndWriteOutput("*", initialResult, enteredNumber);
-  logEntries.push(enteredNumber);
+  const logEntry = {
+    operation: "ADD",
+    prevResult: initialResult,
+    operand: enteredNumber,
+    result: currentResult,
+  };
+  logEntries.push(logEntry);
   console.log(logEntries);
 }
 
@@ -44,7 +62,13 @@ function divide() {
   initialResult = currentResult;
   currentResult = currentResult + enteredNumber;
   createAndWriteOutput("/", initialResult, enteredNumber);
-  logEntries.push(enteredNumber);
+  const logEntry = {
+    operation: "ADD",
+    prevResult: initialResult,
+    operand: enteredNumber,
+    result: currentResult,
+  };
+  logEntries.push(logEntry);
   console.log(logEntries);
 }
 
