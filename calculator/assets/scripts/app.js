@@ -1,9 +1,11 @@
 let currentResult = 0;
 
+// Gets input from input field.
 function getUserNumberInput() {
   return parseInt(userInput.value);
 }
 
+// Generates and writes calculation log.
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   const description = `${resultBeforeCalc} ${operator} ${calcNumber}`;
   outputResult(currentResult, description);
